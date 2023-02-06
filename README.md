@@ -15,9 +15,17 @@ python manage.py runserver para levantar el servidor
 rutas:
 
 http://127.0.0.1:8000/AppLacuna/       <<<  Pagina inicio y consulta de pokemon ingresados [Zangoose,Gardevoir,Charmander]
+
+
 http://127.0.0.1:8000/AppLacuna/formularioEntrenador/
+
+
 http://127.0.0.1:8000/AppLacuna/formularioPokemon/
+
+
 http://127.0.0.1:8000/AppLacuna/formularioGym/
+
+
 
 en cada url se puede ingresar informacion relacionada a la misma.
 
