@@ -1,0 +1,28 @@
+{% extends "AppLacuna/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+Aqui podras registrar los dintintos GYMS  y consultarlos para desafios futuros!!!
+
+{% endblock %}
+
+
+{% block desscripcion %}
+
+<form action="" method="POST"> {% csrf_token %}
+        
+    <table>
+
+        {{formg.as_table}}
+    
+    </table>
+
+    <input type="submit" value ="Enviar">
+
+</form>
+
+Dessafia lideres de gimnasios y obtiene medallas por vencerlos!!!
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends "AppLacuna/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+Aqui puedes registrar tus Pokemons y podras consultarlos!!!
+
+{% endblock %}
+
+
+{% block desscripcion %}
+
+<form action="" method="POST"> {% csrf_token %}
+        
+    <table>
+
+        {{formp.as_table}}
+    
+    </table>
+
+    <input type="submit" value ="Enviar">
+
+</form>
+
+Si tu compañero requiere atencion medica acercate a un centro Pokemon!!
+
+{% endblock %}

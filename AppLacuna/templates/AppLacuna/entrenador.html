@@ -1,0 +1,31 @@
+{% extends "AppLacuna/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+Aqui podras ver y registrar entrenadores!!!
+
+
+
+{% endblock %}
+
+
+{% block desscripcion %}
+
+
+<form action="" method="POST"> {% csrf_token %}
+        
+    <table>
+
+        {{forme.as_table}}
+    
+    </table>
+
+    <input type="submit" value ="Enviar">
+
+</form>
+
+Muchos entrenadores esperan para desafios!!
+
+{% endblock %}

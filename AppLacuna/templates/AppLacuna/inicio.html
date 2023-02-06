@@ -1,0 +1,44 @@
+{% extends "AppLacuna/padre.html" %}
+
+{% load static %}
+
+{% block titulo %}
+
+Hola pokefans!
+
+{% endblock %}
+
+
+{% block desscripcion %}
+
+Tu compañero pokemon es un amigo para toda la vida!
+
+<form action="/AppLacuna/respuesta/" method="GET"> 
+
+    <input type="text" name="nombre" id="nombre">
+
+    <input type="submit" value="Buscar">
+    
+    
+
+</form>
+
+<body>
+    
+    <p> Informacion del Pokemon: {{nombre}}</p>  
+
+    {% if pokemon1 %}
+    <ul>
+    {% for nombre in pokemon1 %}
+
+        <li> Nombre:{{nombre.nombre}}</li>
+        <li> Tipo: {{nombre.tipo}}</li>
+        <li> Peso: {{nombre.peso}}</li>
+
+    {% endfor %}        
+    </ul>
+    {% endif %}
+
+</body>
+
+{% endblock %}
